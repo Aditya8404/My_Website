@@ -34,6 +34,14 @@
   margin-top: 35px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.ml-6 {
+  margin-left: 6px;
+}
+
 .py-15 {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -145,6 +153,30 @@ span, a {
 
 .banner .caption .social-icon a:hover{
   color: #1957f3;
+}
+
+/* Nav-bar */
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: 0.5s all;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1957f3;
+}
+
+.navbar {
+  padding: 15px 0;
+  background: transparent;
 }
 
 /* About Me section */
