@@ -161,6 +161,11 @@ html{
   scroll-behavior: smooth;
 }
 
+.navbar .container .custom_logo img{
+  height: 50px;
+  width: 85px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   font-weight: 700;
@@ -170,6 +175,10 @@ html{
   transition: 0.5s all;
 }
 
+.navbar-dark .navbar-nav .nav-link.active{
+  color: #1957f3 !important;
+}
+
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #1957f3;
 }
@@ -177,6 +186,30 @@ html{
 .navbar {
   padding: 15px 0;
   background: transparent;
+}
+
+.nav-scroll {
+  background: #fff;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.7s all;
+}
+
+.nav-scroll .navbar-nav li a {
+  color: #333 !important;
+}
+
+.navbar .navbar-toggler span{
+  color: #fff;
+}
+
+.navbar .navbar-toggler{
+  border: none;
+}
+
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:active{
+  outline: none;
+  box-shadow: none;
 }
 
 /* About Me section */
@@ -260,6 +293,69 @@ html{
   right: 4px;
 }
 
+/* Experience section */
+
+.experience {
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg-imgs/exp_img.webp);
+  background-attachment: fixed;
+}
+
+.experience .section_title h3{
+  color: #fff;
+}
+
+.experience .experience_item{
+  text-align: center;
+  background: linear-gradient(to right, transparent, rgba(200,200,200,0.1),transparent);
+  padding: 30px;
+}
+
+.experience .experience_item .icon{
+  color: #1957f3;
+  font-size: 30px;
+}
+
+.experience .experience_item p{
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.experience .experience_item .experience_author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience .experience_item .experience_author .part_image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.experience .experience_item .experience_author .part_image img{
+  border-radius: 50%;
+}
+
+.experience .experience_item .experience_author .text{
+  text-align: left;
+}
+
+.experience .experience_item .experience_author .text h5{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.experience .experience_item .experience_author .text h6{
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Projects section */
+
 .project{
   border: 1px solid #fafafa;
   transition: all 0.3s;
@@ -308,6 +404,11 @@ html{
 .project .project_item .content .title .meta span{
   color: #333;
   font-size: 12px;
+}
+
+.project .container .row{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Contact section */
@@ -389,3 +490,10 @@ html{
 .contact .contact-form textarea{
   height: 150px;
 }
+
+/* @media only screen and (max-width: 991px) {
+  .navbar .container{
+    max-width: 100%;
+  }
+  .navbar .custom
+} */
