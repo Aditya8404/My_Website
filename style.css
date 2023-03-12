@@ -491,9 +491,61 @@ html{
   height: 150px;
 }
 
-/* @media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .navbar .container{
     max-width: 100%;
   }
-  .navbar .custom
-} */
+  .navbar .custom_logo{
+    margin-left: 20px;
+    padding: 0 10px;
+  }
+  .nav-scroll .navbar-toggler span{
+    color: #333;
+  }
+  .navbar .navbar-collapse{
+    overflow: hidden;
+    background: #111;
+    color: #fff !important;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+  .nav-scroll .navbar-collapse{
+    background: #fff !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner .caption h4{
+    font-size: 16px;
+  }
+  .banner .caption h2{
+    font-size: 35px;
+  }
+  .banner .caption p br{
+    display: none;
+  }
+
+  .hire_me h2{
+    font-size: 30px;
+  }
+  .about .part_text .info li{
+    width: 100%;
+  }
+  .part_text {
+    padding-bottom: 100px;
+  }
+  .about .part_text h4{
+    padding-top: 20px;
+  }
+
+  .contact .part-info .info-block{
+    border: none;
+  }
+  .xs-md-30{
+    margin-bottom: 30px;
+  }
+  .project_item{
+    margin-bottom: 20px;
+  }
+}
